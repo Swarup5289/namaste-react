@@ -1,70 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-/**
- * Header
- *  - Logo
- *  - Nav Items
- * Body
- *  - Search
- *  - RestaurentContainer
- *    - Restaurent Crd
- * Footer
- *  - Copyright
- *  - Links
- *  - Address
- *  - Contact
- */
-const Header = () => {
-  return (
-    <div className="header">
-      <div>
-        <img
-          className="logo"
-          src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Contact us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-const RestaurentCard = (props) => {
-  const { resData } = props;
-  const { name, cloudinaryImageId, costForTwo, cuisines, avgRating } =
-    resData?.info;
-  const { deliveryTime } = resData?.info.sla;
-  return (
-    <div
-      className="res-card"
-      style={{
-        backgroundColor: "#f0f0f0",
-      }}
-    >
-      <img
-        className="res-logo"
-        alt="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
-        }
-      ></img>
-      <h3>{name}</h3>
-      <h4>{cuisines.join(", ")}</h4>
-      <h4>{costForTwo}</h4>
-      <h4>{avgRating}</h4>
-      <h4>{deliveryTime} minutes</h4>
-    </div>
-  );
-};
-
 const resList = [
   {
     info: {
@@ -702,36 +635,631 @@ const resList = [
     },
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
+  {
+    info: {
+      id: "727509",
+      name: "Bezawada Ruchulu",
+      cloudinaryImageId: "a7c984c4681b9c53ec6caab27e36387a",
+      locality: "Sri Ramnagar",
+      areaName: "Gajuwaka",
+      costForTwo: "₹200 for two",
+      cuisines: ["South Indian", "Beverages"],
+      avgRating: 3.2,
+      parentId: "323145",
+      avgRatingString: "3.2",
+      totalRatingsString: "50+",
+      sla: {
+        deliveryTime: 31,
+        lastMileTravel: 0.7,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "0.7 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-02-16 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹125 OFF",
+        subHeader: "ABOVE ₹249",
+        discountTag: "FLAT DEAL",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-8ca86ab3-08d3-4306-852b-2ff28122134e",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/bezawada-ruchulu-sri-ramnagar-gajuwaka-vizag-727509",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "743800",
+      name: "THE LEGENDAIRY MILKSHAKES",
+      cloudinaryImageId: "d576868d5a529d19dca25a968aba8a16",
+      locality: "Shamika Nagar",
+      areaName: "Gajuwaka",
+      costForTwo: "₹200 for two",
+      cuisines: ["Beverages"],
+      avgRating: 4.5,
+      veg: true,
+      parentId: "13330",
+      avgRatingString: "4.5",
+      totalRatingsString: "100+",
+      sla: {
+        deliveryTime: 23,
+        lastMileTravel: 2.6,
+        serviceability: "SERVICEABLE",
+        slaString: "20-25 mins",
+        lastMileTravelString: "2.6 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-02-16 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹125 OFF",
+        subHeader: "ABOVE ₹249",
+        discountTag: "FLAT DEAL",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-8ca86ab3-08d3-4306-852b-2ff28122134e",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/the-legendairy-milkshakes-shamika-nagar-gajuwaka-vizag-743800",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "415335",
+      name: "Royal Foodies",
+      cloudinaryImageId: "ut3qilkmknvc9kd1gx65",
+      locality: "Gajuwaka",
+      areaName: "Chaitanya Nagar",
+      costForTwo: "₹200 for two",
+      cuisines: ["Biryani", "Chinese", "Indian"],
+      avgRating: 3.5,
+      parentId: "172104",
+      avgRatingString: "3.5",
+      totalRatingsString: "500+",
+      sla: {
+        deliveryTime: 24,
+        lastMileTravel: 1.7,
+        serviceability: "SERVICEABLE",
+        slaString: "20-25 mins",
+        lastMileTravelString: "1.7 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-02-16 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹125 OFF",
+        subHeader: "ABOVE ₹249",
+        discountTag: "FLAT DEAL",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-8ca86ab3-08d3-4306-852b-2ff28122134e",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/royal-foodies-gajuwaka-chaitanya-nagar-vizag-415335",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "735220",
+      name: "Donne Biryani House",
+      cloudinaryImageId: "dd58a26dab0463b00af0c3a137113705",
+      locality: "Lbs Nagar",
+      areaName: "Gajuwaka",
+      costForTwo: "₹199 for two",
+      cuisines: ["Biryani"],
+      avgRating: 3.2,
+      parentId: "338",
+      avgRatingString: "3.2",
+      totalRatingsString: "100+",
+      sla: {
+        deliveryTime: 24,
+        lastMileTravel: 0.9,
+        serviceability: "SERVICEABLE",
+        slaString: "20-25 mins",
+        lastMileTravelString: "0.9 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-02-16 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "20% OFF",
+        subHeader: "UPTO ₹50",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-8ca86ab3-08d3-4306-852b-2ff28122134e",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/donne-biryani-house-lbs-nagar-gajuwaka-vizag-735220",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "508360",
+      name: "AM 2 PM",
+      cloudinaryImageId: "rnnh2n9ckr8wxhjjhehd",
+      locality: "Gajuwaka",
+      areaName: "Babu Complex",
+      costForTwo: "₹200 for two",
+      cuisines: ["Biryani", "Chinese", "Indian"],
+      avgRating: 3.9,
+      parentId: "30742",
+      avgRatingString: "3.9",
+      totalRatingsString: "500+",
+      sla: {
+        deliveryTime: 24,
+        lastMileTravel: 2.7,
+        serviceability: "SERVICEABLE",
+        slaString: "20-25 mins",
+        lastMileTravelString: "2.7 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-02-16 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "10% OFF",
+        subHeader: "UPTO ₹40",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-8ca86ab3-08d3-4306-852b-2ff28122134e",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/am-2-pm-gajuwaka-babu-complex-vizag-508360",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "526795",
+      name: "CakeZone Patisserie",
+      cloudinaryImageId: "dd5886c5e8b7943cce6b751825380a45",
+      locality: "Gajuwaka",
+      areaName: "Kurmannapalem",
+      costForTwo: "₹200 for two",
+      cuisines: ["Bakery", "Desserts", "Sweets", "Ice Cream"],
+      avgRating: 4.3,
+      parentId: "7003",
+      avgRatingString: "4.3",
+      totalRatingsString: "1K+",
+      sla: {
+        deliveryTime: 32,
+        lastMileTravel: 6.4,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "6.4 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-02-16 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹125 OFF",
+        subHeader: "ABOVE ₹299",
+        discountTag: "FLAT DEAL",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-8ca86ab3-08d3-4306-852b-2ff28122134e",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/cakezone-patisserie-gajuwaka-kurmannapalem-vizag-526795",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "638021",
+      name: "Delights by INOX",
+      cloudinaryImageId: "pzddraf9ef2lpzvxpqqb",
+      locality: "chiatnya nagar",
+      areaName: "Gajuwaka",
+      costForTwo: "₹400 for two",
+      cuisines: ["Snacks"],
+      avgRating: 3.7,
+      veg: true,
+      parentId: "385095",
+      avgRatingString: "3.7",
+      totalRatingsString: "20+",
+      sla: {
+        deliveryTime: 25,
+        lastMileTravel: 2.1,
+        serviceability: "SERVICEABLE",
+        slaString: "20-25 mins",
+        lastMileTravelString: "2.1 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-02-16 23:59:00",
+        opened: true,
+      },
+      badges: {
+        imageBadges: [
+          {
+            imageId: "v1695133679/badges/Pure_Veg111.png",
+            description: "pureveg",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "pureveg",
+                  imageId: "v1695133679/badges/Pure_Veg111.png",
+                },
+              },
+            ],
+          },
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "60% OFF",
+        subHeader: "UPTO ₹120",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-8ca86ab3-08d3-4306-852b-2ff28122134e",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/delights-by-inox-chiatnya-nagar-gajuwaka-vizag-638021",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "642599",
+      name: "Cakes Heaven",
+      cloudinaryImageId: "58f173d599dd9ee285f795b9578ee36b",
+      locality: "Rh Colony",
+      areaName: "Kurmannapalem",
+      costForTwo: "₹200 for two",
+      cuisines: ["Bakery", "Desserts", "Snacks", "Sweets"],
+      avgRating: 4,
+      parentId: "55323",
+      avgRatingString: "4.0",
+      totalRatingsString: "100+",
+      sla: {
+        deliveryTime: 31,
+        lastMileTravel: 6.4,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "6.4 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-02-16 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "50% OFF",
+        subHeader: "UPTO ₹100",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-8ca86ab3-08d3-4306-852b-2ff28122134e",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/cakes-heaven-rh-colony-kurmannapalem-vizag-642599",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "584964",
+      name: "Cake's Den",
+      cloudinaryImageId: "e96dc453cac7f3eb3353bb0c1e978e05",
+      locality: "Kurmanapalem",
+      areaName: "Kurmannapalem",
+      costForTwo: "₹200 for two",
+      cuisines: ["Bakery", "Desserts", "Sweets"],
+      avgRating: 4.2,
+      parentId: "55316",
+      avgRatingString: "4.2",
+      totalRatingsString: "500+",
+      sla: {
+        deliveryTime: 34,
+        lastMileTravel: 6.4,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "6.4 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-02-16 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "50% OFF",
+        subHeader: "UPTO ₹100",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-8ca86ab3-08d3-4306-852b-2ff28122134e",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/cakes-den-kurmanapalem-kurmannapalem-vizag-584964",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
 ];
 
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="res-container">
-        {resList.map((restaurent) => (
-          <RestaurentCard key={restaurent.info.id} resData={restaurent} />
-        ))}
-      </div>
-    </div>
-  );
-};
-const Footer = () => {
-  return (
-    <div className="footer">
-      <h3>Copyright</h3>
-    </div>
-  );
-};
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-      <Footer />
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default resList;
